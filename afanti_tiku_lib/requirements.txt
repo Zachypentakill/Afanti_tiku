@@ -1,0 +1,6 @@
+redis
+redis-py-cluster
+cymysql
+requests
+mysql-python
+beautifulsoup4
