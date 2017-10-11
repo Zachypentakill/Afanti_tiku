@@ -1,0 +1,121 @@
+.afanti-latex .dG {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
+.afanti-latex .aY {display: block; text-align: center; margin: 1em 0; padding: 0}
+.afanti-latex .dG[tabindex]:focus, body :focus .dG[tabindex] {display: inline-block; outline: none}
+.afanti-latex .dO {display: inline-block; border-collapse: separate; border-spacing: 0}
+.afanti-latex .dO * {display: inline-block; text-align: left}
+.afanti-latex .eN {display: block; text-align: center}
+.afanti-latex .dJ {display: block; text-align: center}
+.afanti-latex .bE {height: 0; position: relative}
+.afanti-latex .bE > * {position: absolute}
+.afanti-latex .aX > * {display: inline-block}
+.afanti-latex .eW {display: inline-block}
+.afanti-latex .eO {display: block}
+.afanti-latex .fE {display: table-cell}
+.afanti-latex .eP {display: block}
+.afanti-latex .eP > * {padding-left: 0px!important; padding-right: 0px!important}
+.afanti-latex .fE > * {padding-left: 0px!important; padding-right: 0px!important}
+.afanti-latex .eW > .eZ {display: block}
+.afanti-latex .eW > .eY {display: block}
+.afanti-latex .eQ > .eS {display: block}
+.afanti-latex .eQ > .eR {display: block}
+.afanti-latex .dH > .dD {display: inline-block}
+.afanti-latex .fA {vertical-align: top}
+.afanti-latex .dY * {visibility: hidden}
+.afanti-latex .dQ {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 2px 3px; font-style: normal; font-size: 90%}
+.afanti-latex .cY {line-height: normal}
+.afanti-latex .dP > svg {fill: none; stroke: currentColor}
+.afanti-latex .eJ {display: table-row}
+.afanti-latex .dT {display: table-row}
+.afanti-latex .eH {display: table-cell; text-align: center}
+.afanti-latex .dM {display: block}
+.afanti-latex .dB {display: inline-block}
+.afanti-latex .dA {display: block}
+.afanti-latex .eV {display: span}
+.afanti-latex .dD {display: block; white-space: pre}
+.afanti-latex .dL {display: inline-table}
+.afanti-latex .eU {display: table-row}
+.afanti-latex .dC {display: table-cell}
+.afanti-latex .fB {display: table; width: 100%}
+.afanti-latex .dN {display: block; height: 0}
+.afanti-latex .eX {width: 0; padding-top: 1em}
+.afanti-latex .fF {width: 0}
+.afanti-latex .bB {margin-left: .167em}
+.afanti-latex .bC {margin-left: .222em}
+.afanti-latex .bD {margin-left: .278em}
+.afanti-latex .dF {display: block; visibility: hidden; position: absolute; top: 0; line-height: normal; font-size: 500%}
+.afanti-latex .dF .dD {display: inline}
+.afanti-latex .dF .dB {padding-top: 1000px}
+.afanti-latex .bA {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.afanti-latex .aZ {display: none}
+.afanti-latex .fC {display: block; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow: hidden; height: 1px}
+.afanti-latex .dK {position: absolute; width: 1px; height: 60ex}
+.afanti-latex .dG .eM {line-height: 1.2; vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.afanti-latex .aW {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: normal}
+.afanti-latex .aV {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: normal}
+.afanti-latex .aT {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: normal; font-weight: bold}
+.afanti-latex .aU {font-family: STIXGeneral,'Cambria Math','Arial Unicode MS',serif; font-style: italic; font-weight: bold}
+.afanti-latex .aA {font-family: aA,aAw}
+.afanti-latex .aB {font-family: aB,aBx,aBw}
+.afanti-latex .aE {font-family: aE,aEw}
+.afanti-latex .aD {font-family: aD,aDx,aDw}
+.afanti-latex .aI {font-family: aI,aIx,aIw}
+.afanti-latex .aM {font-family: aM,aMw}
+.afanti-latex .aK {font-family: aK,aKx,aKw}
+.afanti-latex .aL {font-family: aL,aLx,aLw}
+.afanti-latex .aN {font-family: aN,aNw}
+.afanti-latex .aS {font-family: aS,aSw}
+.afanti-latex .aC {font-family: aC,aCw}
+.afanti-latex .aF {font-family: aF,aFx,aFw}
+.afanti-latex .aG {font-family: aG,aGx,aGw}
+.afanti-latex .aH {font-family: aH,aHw}
+.afanti-latex .aJ {font-family: aJ,aJx,aJw}
+.afanti-latex .aO {font-family: aO,aOw}
+.afanti-latex .aP {font-family: aP,aPw}
+.afanti-latex .aQ {font-family: aQ,aQw}
+.afanti-latex .aR {font-family: aR,aRw}
+@font-face {font-family: aA; src: local('MathJax_AMS'), local('MathJax_AMS-Regular')}
+@font-face {font-family: aAw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf') format('opentype')}
+@font-face {font-family: aB; src: local('MathJax_Caligraphic Bold'), local('MathJax_Caligraphic-Bold')}
+@font-face {font-family: aBx; src: local('MathJax_Caligraphic'); font-weight: bold}
+@font-face {font-family: aBw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf') format('opentype')}
+@font-face {font-family: aE; src: local('MathJax_Fraktur'), local('MathJax_Fraktur-Regular')}
+@font-face {font-family: aEw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf') format('opentype')}
+@font-face {font-family: aD; src: local('MathJax_Fraktur Bold'), local('MathJax_Fraktur-Bold')}
+@font-face {font-family: aDx; src: local('MathJax_Fraktur'); font-weight: bold}
+@font-face {font-family: aDw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf') format('opentype')}
+@font-face {font-family: aI; src: local('MathJax_Math BoldItalic'), local('MathJax_Math-BoldItalic')}
+@font-face {font-family: aIx; src: local('MathJax_Math'); font-weight: bold; font-style: italic}
+@font-face {font-family: aIw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf') format('opentype')}
+@font-face {font-family: aM; src: local('MathJax_SansSerif'), local('MathJax_SansSerif-Regular')}
+@font-face {font-family: aMw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf') format('opentype')}
+@font-face {font-family: aK; src: local('MathJax_SansSerif Bold'), local('MathJax_SansSerif-Bold')}
+@font-face {font-family: aKx; src: local('MathJax_SansSerif'); font-weight: bold}
+@font-face {font-family: aKw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf') format('opentype')}
+@font-face {font-family: aL; src: local('MathJax_SansSerif Italic'), local('MathJax_SansSerif-Italic')}
+@font-face {font-family: aLx; src: local('MathJax_SansSerif'); font-style: italic}
+@font-face {font-family: aLw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf') format('opentype')}
+@font-face {font-family: aN; src: local('MathJax_Script'), local('MathJax_Script-Regular')}
+@font-face {font-family: aNw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf') format('opentype')}
+@font-face {font-family: aS; src: local('MathJax_Typewriter'), local('MathJax_Typewriter-Regular')}
+@font-face {font-family: aSw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf') format('opentype')}
+@font-face {font-family: aC; src: local('MathJax_Caligraphic'), local('MathJax_Caligraphic-Regular')}
+@font-face {font-family: aCw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf') format('opentype')}
+@font-face {font-family: aF; src: local('MathJax_Main Bold'), local('MathJax_Main-Bold')}
+@font-face {font-family: aFx; src: local('MathJax_Main'); font-weight: bold}
+@font-face {font-family: aFw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf') format('opentype')}
+@font-face {font-family: aG; src: local('MathJax_Main Italic'), local('MathJax_Main-Italic')}
+@font-face {font-family: aGx; src: local('MathJax_Main'); font-style: italic}
+@font-face {font-family: aGw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('opentype')}
+@font-face {font-family: aH; src: local('MathJax_Main'), local('MathJax_Main-Regular')}
+@font-face {font-family: aHw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('opentype')}
+@font-face {font-family: aJ; src: local('MathJax_Math Italic'), local('MathJax_Math-Italic')}
+@font-face {font-family: aJx; src: local('MathJax_Math'); font-style: italic}
+@font-face {font-family: aJw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf') format('opentype')}
+@font-face {font-family: aO; src: local('MathJax_Size1'), local('MathJax_Size1-Regular')}
+@font-face {font-family: aOw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf') format('opentype')}
+@font-face {font-family: aP; src: local('MathJax_Size2'), local('MathJax_Size2-Regular')}
+@font-face {font-family: aPw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf') format('opentype')}
+@font-face {font-family: aQ; src: local('MathJax_Size3'), local('MathJax_Size3-Regular')}
+@font-face {font-family: aQw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf') format('opentype')}
+@font-face {font-family: aR; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
+@font-face {font-family: aRw; src /*1*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('file:///Users/peter/dev/afanti/mathjax_render/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}

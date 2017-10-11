@@ -1,0 +1,16 @@
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20000 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20001 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20002 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20003 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20004 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20005 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20006 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20007 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20008 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20009 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20010 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20011 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20012 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20013 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20014 &
+nohup python3 mathjax_rendering_server.py 10.170.251.183 20015 &

@@ -26,16 +26,6 @@ def writecsv(items):
 
 def remove_biaoqian(str_bioaqian):
     if isinstance(str_bioaqian, str):
-        # str_bioaqian = str_bioaqian.replace('<\/v>','').replace('<label>','').replace('&nbsp;',' ')
-        # str_bioaqian = str_bioaqian.replace('<\/tr>', '</tr>').replace('<\/td>', '</td>').replace('<\/pos>','</pos>')
-        # str_bioaqian = str_bioaqian.replace('<\/label>','').replace('<\/div>','</div>').replace('<\/li>','')
-        # str_bioaqian = str_bioaqian.replace('<\/ul>','/ul').replace('<v>','').replace('<\/span>','</span>')
-        # str_bioaqian = str_bioaqian.replace('<p>', '').replace('<\\/p>', '').replace('; ; ; ;','')
-        # str_bioaqian = str_bioaqian.replace('&nbsp', ' ').replace('<u>','').replace('; ; ;','')
-        # str_bioaqian = str_bioaqian.replace('; ;', ' ').replace('\/data','/data').replace('<\\/u>','')
-        # str_bioaqian = str_bioaqian.replace('<\/sub>','</sub>').replace('<\/sup>','</sup>')
-        # str_bioaqian = str_bioaqian.replace('<pos>', '').replace('<\\/pos>', '').replace('<\/ b>','</ b>')
-        # str_bioaqian = str_bioaqian.replace('<br \\/>','<br />').replace('\/','/').replace('<\/p>','')
         str_bioaqian = str_bioaqian.replace('&nbsp;',' ').replace('; ; ; ;','').replace("\\/",'/')
         str_bioaqian = str_bioaqian.replace('; ; ;','').replace('&nbsp', ' ')
         str_bioaqian = str_bioaqian.replace('; ;', ' ').replace('\/','/')
@@ -91,14 +81,13 @@ def Data_to_MySQL(datas):
     if len(datas['question_body']) != 0:
         cursor.execute(insert_sql, (
             75, datas["spider_url"], datas["knowledge_point"], datas["subject"], datas["difficulty"],
-            datas["question_type"], datas["question_body"],
-            datas["question_body"], datas["answer"], datas["answer"], datas["jieda"], datas["jieda"], datas["analy"],
-            datas["analy"], datas["comment"], datas["comment"], datas["question_id"]))
+            datas["question_type"], '', datas["question_body"], '', datas["answer"], '', datas["jieda"],
+            '', datas["analy"], datas["comment"], datas["comment"], datas["question_id"]))
     else:
         cursor.execute(insert_sql, (
             75, datas["spider_url"], datas["knowledge_point"], datas["subject"], datas["difficulty"],
-            datas["question_type"], '', '', datas["answer"], datas["answer"], datas["jieda"], datas["jieda"],
-            datas["analy"], datas["analy"], datas["comment"], datas["comment"], datas["question_id"]))
+            datas["question_type"], '', '', '', datas["answer"], '', datas["jieda"],
+            '', datas["analy"], datas["comment"], datas["comment"], datas["question_id"]))
     conn.commit()
 
 

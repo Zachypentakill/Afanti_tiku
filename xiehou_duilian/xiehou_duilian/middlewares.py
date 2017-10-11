@@ -28,6 +28,10 @@ from scrapy.exceptions import NotConfigured
 from scrapy.utils.response import response_status_message
 from scrapy.core.downloader.handlers.http11 import TunnelError
 from scrapy.utils.python import global_object_name
+from scrapy.dupefilter import RFPDupeFilter
+from w3lib.url import canonicalize_url
+from pybloom import ScalableBloomFilter
+
 
 logger = logging.getLogger(__name__)
 
@@ -79,9 +83,45 @@ class XiehouDuilianSpiderMiddleware(object):
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
+class URLsha1Filter(RFPDupeFilter):
+    # def __init__(self, path=None):
+    #     self.urls_seen = set()
+    #     RFPDupeFilter.__init__(self, path)
+
+    # def request_seen(self, request):
+    #     fp = hashlib.sha1()
+    #     fp.update(canonicalize_url(request.url))
+    #     url_sha1 = fp.hexdigest()
+    #     if url_sha1 in self.urls_seen:
+    #         return True
+    #     else:
+    #         self.urls_seen.add(url_sha1)
+
+    def __init__(self, path=None):
+        self.urls_sbf = ScalableBloomFilter(mode=ScalableBloomFilter.SMALL_SET_GROWTH)
+        RFPDupeFilter.__init__(self, path)
+
+    def request_seen(self, request):
+        fp = hashlib.sha1()
+        fp.update(canonicalize_url(request.url))
+        url_sha1 = fp.hexdigest()
+        if url_sha1 in self.urls_sbf:
+            return True
+        else:
+            self.urls_seen.add(url_sha1)
 
 
+import redis
+pool = redis.ConnectionPool(host='127.0.0.1', port=6379)
+r = redis.Redis(connection_pool=pool)
+r.set('name','liyanfeng')
+r.mset(age=20,country='china')
+print(r.mget(['age', 'country', 'name']))
+print(r.getrange('name', 3, 6))
+print(r.get('name').decode())
 
+r.hmset('student', {'name':'afanti', 'age':'20'})
+print(r.hmget('student', ['name','age']))
 
-
-
+r.lpush('digit', 11,22,33)
+r.linsert('digit', 'before', '22', 'aa')

@@ -37,7 +37,7 @@ def record_questions(rows):
 
 def save_question(cols):
     mysql_conn = get_mysql_connection()
-
+    #
     sql, vals = insert_sql('question_db_offline.wln100_question_20170919',
                            cols, ignore=True)
     execute(mysql_conn, sql, values=vals)

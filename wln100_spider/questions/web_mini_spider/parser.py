@@ -8,6 +8,8 @@ from afanti_tiku_lib.html.beautify_html import center_image
 from afanti_tiku_lib.html.beautify_html import remove_tag
 from lxml.html import fromstring
 from lxml.html import etree
+from w3lib.html import remove_tags
+from afanti_tiku_lib.question_template.question_template import Question
 
 
 class Wln100QuestionParser(object):
@@ -41,13 +43,23 @@ class Wln100QuestionParser(object):
         html = self.html_magic.bewitch(qs_json,spider_url=key)
         html = fix_any(html)
         html = center_image(html)
+
         ################################################################
 
         knowledge_point = re.findall('<div class="answer-context f-roman">(.+?)</div>', html, re.S)
         if len(knowledge_point) != 0:
+            knowledge_point_jsons = []
+            knowledge_points = ''
             knowledge_point = knowledge_point[0]
-            cols['knowledge_point'] = knowledge_point
-            cols['knowledge_point_json'] = knowledge_point
+            knowledge_point_json = knowledge_point.split('<br/>')
+            for i in knowledge_point_json:
+                knowledge_points += remove_tags(i).split(' >> ')[-1] + ';'
+                node_i = remove_tags(i).split(' >> ')
+                #node_i = json.dumps(node_i, ensure_ascii=False)
+                knowledge_point_jsons.append(node_i)
+            knowledge_point_jsons = json.dumps(knowledge_point_jsons, ensure_ascii=False)
+            cols['knowledge_point'] = knowledge_points[ : -2]
+            cols['knowledge_point_json'] =  knowledge_point_jsons
 
         ################################################################
 
@@ -78,7 +90,7 @@ class Wln100QuestionParser(object):
 
         question_html = re.findall('<div class="test-item-body TD-body f-roman">(.+?)</div>', html, re.S)
         question_html = question_html[0].strip()
-        cols['question_html'] = question_html
+        #cols['question_html'] = question_html
 
         ################################################################
 
@@ -101,14 +113,26 @@ class Wln100QuestionParser(object):
         answer_all_html = self.html_magic.bewitch((as_js.get('answer') or ''),
                                                   spider_url=key)
         answer_all_html = fix_any(answer_all_html)
-        cols['answer_all_html'] = center_image(answer_all_html)
+        answer_all_html = center_image(answer_all_html)
+        #cols['answer_all_html'] = center_image(answer_all_html)
 
         ################################################################
 
         fenxi = self.html_magic.bewitch((as_js.get('analytic') or ''),
                                         spider_url=key)
         fenxi = fix_any(fenxi)
-        cols['fenxi'] = center_image(fenxi)
+        fenxi = center_image(fenxi)
+        #cols['fenxi'] = fenxi
+
+        ################################################################
+
+        _question = Question(question_body=question_html,
+                             answer=answer_all_html,
+                             analy=fenxi, )
+        standard_question = _question.normialize()
+        cols['question_html'] = standard_question['question_body']
+        cols['answer_all_html'] = standard_question['answer']
+        cols['fenxi'] = standard_question['analy']
 
         ################################################################
 

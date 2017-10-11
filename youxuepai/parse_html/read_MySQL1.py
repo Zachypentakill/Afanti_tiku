@@ -18,16 +18,6 @@ def writecsv(items):
 
 def remove_biaoqian(str_bioaqian):
     if isinstance(str_bioaqian, str):
-        # str_bioaqian = str_bioaqian.replace('<\/v>','').replace('<label>','').replace('&nbsp;',' ')
-        # str_bioaqian = str_bioaqian.replace('<\/tr>', '</tr>').replace('<\/td>', '</td>').replace('<\/pos>','</pos>')
-        # str_bioaqian = str_bioaqian.replace('<\/label>','').replace('<\/div>','</div>').replace('<\/li>','')
-        # str_bioaqian = str_bioaqian.replace('<\/ul>','/ul').replace('<v>','').replace('<\/span>','</span>')
-        # str_bioaqian = str_bioaqian.replace('<p>', '').replace('<\\/p>', '').replace('; ; ; ;','')
-        # str_bioaqian = str_bioaqian.replace('&nbsp', ' ').replace('<u>','').replace('; ; ;','')
-        # str_bioaqian = str_bioaqian.replace('; ;', ' ').replace('\/data','/data').replace('<\\/u>','')
-        # str_bioaqian = str_bioaqian.replace('<\/sub>','</sub>').replace('<\/sup>','</sup>')
-        # str_bioaqian = str_bioaqian.replace('<pos>', '').replace('<\\/pos>', '').replace('<\/ b>','</ b>')
-        # str_bioaqian = str_bioaqian.replace('<br \\/>','<br />').replace('\/','/').replace('<\/p>','')
         str_bioaqian = str_bioaqian.replace('&nbsp;',' ').replace('; ; ; ;','').replace("\\/",'/')
         str_bioaqian = str_bioaqian.replace('; ; ;','').replace('&nbsp', ' ')
         str_bioaqian = str_bioaqian.replace('; ;', ' ').replace('\/','/')
@@ -62,47 +52,6 @@ def Data_to_MySQL(datas):
         datas["question_type"], '', '', datas["answer"], datas["answer"], datas["jieda"], datas["jieda"],
         datas["analy"], datas["analy"], datas["comment"], datas["comment"], datas["question_id"]))
     conn.commit()
-
-
-    # 异步插入数据库
-#     dbparms = dict(
-#         host='10.44.149.251',
-#         user='liyanfeng',
-#         passwd='AFtdbliyf7893',
-#         db='question_db_offline',
-#         port=3306,
-#         charset= "utf8",
-#         use_unicode=True,
-#         cursorclass = pymysql.cursors.DictCursor,
-#         )
-#     dbpool = adbapi.ConnectionPool("pymysql", **dbparms)
-#     try:
-#         dbpool.runInteraction(do_insert , datas)
-#     except Exception as e:
-#         print(e)
-#
-# def do_insert(cursor, datas):
-#     try:
-#         insert_sql = """
-#             insert ignore into youxuepai_parse_0807(spider_source, spider_url, knowledge_point, `subject`,
-#             difficulty, question_type,question_html_origin,
-#             answer_all_html_origin, jieda_origin, fenxi_origin, dianping_origin, html_id)
-#             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-#             """
-#         if len(datas['question_body']) != 0:
-#             cursor.execute(insert_sql, (
-#             datas["source"], datas["spider_url"], datas["knowledge_point"], datas["subject"], datas["difficulty"],
-#             datas["question_type"], datas["question_body"], datas["answer"], datas["jieda"], datas["analy"],
-#             datas["comment"], datas["question_id"]))
-#         else:
-#             datas['question_body'] = None
-#             cursor.execute(insert_sql, (
-#             datas["source"], datas["spider_url"], datas["knowledge_point"], datas["subject"], datas["difficulty"],
-#             datas["question_type"], datas["question_body"], datas["answer"], datas["jieda"], datas["analy"],
-#             datas["comment"], datas["question_id"]))
-#
-#     except Exception as e:
-#         print(e)
 
 def tableToJson(table):
     conn = pymysql.connect(host='10.44.149.251', user='liyanfeng', passwd='AFtdbliyf7893', db='html_archive',
@@ -203,7 +152,7 @@ def tableToJson(table):
 
         else:
             try:
-                jieda = html_content['answer']
+                jieda = html_content['jieda']
                 if len(jieda) == 0:
                     jieda = ''
                     result['jieda'] = jieda
