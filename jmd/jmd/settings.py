@@ -57,7 +57,7 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 8
 #}
 
 LOG_LEVEL= 'DEBUG'
-LOG_FILE  = "jmg.log"
+LOG_FILE  = "jmd.log"
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html

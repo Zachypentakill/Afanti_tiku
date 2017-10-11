@@ -98,12 +98,15 @@ def Data_to_MySQL(datas):
 
 def tableToJson(table):
     config = json.load(open(CONFIG_FILE))
+    first_id = 1
     conn = pymysql.connect(host=config['host'], user=config['user'], passwd=config['password'], db='html_archive',
                            port=3306, charset= "utf8", use_unicode=True, cursorclass = pymysql.cursors.DictCursor)
     cur = conn.cursor()
     #sql = 'select * from %s where question_type = 12 limit 5000' % table
     #sql = 'select * from %s where question_type = 2 limit 500 ' % table
-    sql = 'select * from %s limit 1000' % table
+    #sql = 'select * from {} where topic not like "%yitikuimage.oss-cn-qingdao.aliyuncs.com%" '.format(table)
+    sql = 'select * from {0} where source_id > {1} and topic not like "%yitikuimage.oss-cn-qingdao.aliyuncs.com%"  limit 1000'.format(
+        table, first_id)
     cur.execute(sql)
     data = cur.fetchall()
     cur.close()
@@ -115,8 +118,10 @@ def tableToJson(table):
     jsonData = []
     for row in data:
         spider_source = int(row['spider_source'])
+        spider_url = row['spider_url']
         image_parse = HtmlMagic(spider_source=spider_source,download=True, archive_image=False)
         result1 = {}
+
         pattern = row['pattern']
         result1['question_type_name'] = pattern
         for key, value in pattern_item.items():
@@ -160,9 +165,8 @@ def tableToJson(table):
 
         mapping_dict = {
             'question_id': 'source_id',
-            'spider_sorce': 'spider_source',
-            'spider_url': 'spider_url',
             'subject': 'subject',
+            'spider_url': 'spider_url',
             'knowledge_point': 'kaodian',
             'difficulty': 'difficulty',
             'source': 'spider_source'

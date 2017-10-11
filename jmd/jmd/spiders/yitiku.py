@@ -21,8 +21,8 @@ class YitikuSpider(scrapy.Spider):
     parsed_all_shiti_url = []
     timeout_fail_url = []
     threshold = 10
-    first_number = 1229916
-    end_number = 1400000
+    first_number = 1070000
+    end_number = 1100000
     init_i = 0
     end_number_final = 1397449
     shijuan_first_number = 1
