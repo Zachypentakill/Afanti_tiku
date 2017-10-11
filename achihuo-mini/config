@@ -1,0 +1,21 @@
+[mysql]
+user = root
+password =
+host = 127.0.0.1
+port = 3306
+
+[postgresql]
+user =
+password =
+host = 127.0.0.1
+port = 5432
+
+[redis]
+password =
+host =
+port = 6379
+db =
+
+[rediscluster]
+startup_nodes =
+password =

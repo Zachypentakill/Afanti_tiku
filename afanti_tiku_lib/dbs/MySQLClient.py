@@ -52,7 +52,7 @@ class MySQLClient(object):
         '''
         params = dict(user=user, passwd=passwd, db=db, host=host, port=port)
         defaults = dict(use_unicode=True, charset='utf8')
-        for k, v in defaults.iteritems():
+        for k, v in defaults.items():
             params[k] = kwargs.pop(k, v)
         params.update(kwargs)
         self.params = params
@@ -156,7 +156,7 @@ class MySQLClient(object):
             r = cursor.rowcount
             try:
                 self.conn.commit()
-            except Exception, e:
+            except Exception as e:
                 self.conn.rollback()
                 raise Exception(e)
             return r
